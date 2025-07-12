@@ -8,8 +8,9 @@ import os
 import google.generativeai as genai
 
 # Set your API key
-os.environ["AIzaSyA0Tfg_ys1UlWdyXBc_ezimxV5l39Ozp6U"] = ("AIzaSyA0Tfg_ys1UlWdyXBc_ezimxV5l39Ozp6U")
-genai.configure(api_key=os.environ["AIzaSyA0Tfg_ys1UlWdyXBc_ezimxV5l39Ozp6U"])
+# os.environ["YOUR_GEMINI_API_KEY"] = "YOUR_API_KEY_HERE"
+# genai.configure(api_key=os.environ["YOUR_GEMINI_API_KEY"])
+
 
 
 def ask_gemini(prompt_text):
