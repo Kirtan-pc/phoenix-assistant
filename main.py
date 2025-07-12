@@ -8,8 +8,8 @@ import os
 import google.generativeai as genai
 
 # Set your API key
-# os.environ["YOUR_GEMINI_API_KEY"] = "YOUR_API_KEY_HERE"
-# genai.configure(api_key=os.environ["YOUR_GEMINI_API_KEY"])
+os.environ["YOUR_GEMINI_API_KEY"] = "YOUR_API_KEY_HERE"
+genai.configure(api_key=os.environ["YOUR_GEMINI_API_KEY"])
 
 
 
@@ -25,7 +25,7 @@ def ask_gemini(prompt_text):
 
 
 recognizer = sr.Recognizer()
-newsapi = "022ea18b7ddd4ac29859588dbb4e228c"
+# newsapi = "YOUR_NEWSAPI_KEY_HERE"  # Replace with your actual NewsAPI key
 
 
 def speak(text):
