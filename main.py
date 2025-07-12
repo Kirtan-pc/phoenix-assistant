@@ -68,7 +68,7 @@ def processCommand(command):
     elif "news" in command.lower():
         speak("Fetching the latest news headlines for you.")
         r = requests.get(
-            f"https://newsapi.org/v2/top-headlines?country=us&apiKey={newsapi}"
+            f"https://newsapi.org/v2/top-headlines?country=us&apiKey={"newsapi"}"
         )
 
         if r.status_code == 200:
